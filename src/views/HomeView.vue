@@ -5,6 +5,7 @@
   <ToolBox/>
   <MyWork/>
   <ContactForm/>
+  <PageFooter/>
 </template>
 
 <script>
@@ -14,6 +15,7 @@ import AboutMe from './../components/AboutMe.vue';
 import ToolBox from './../components/ToolBox.vue';
 import MyWork from './../components/MyWork.vue';
 import ContactForm from './../components/ContactForm.vue';
+import PageFooter from './../components/PageFooter.vue';
 
 export default {
   name: 'App',
@@ -23,7 +25,8 @@ export default {
     AboutMe,
     ToolBox,
     MyWork,
-    ContactForm
+    ContactForm,
+    PageFooter
 }
 }
 

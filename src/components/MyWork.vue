@@ -1,26 +1,68 @@
 <template>
-    <section class="work">
-        <div class="container-work">
-            <div class="work-img-heading">
-                <h2>My work</h2>
-                <h3>Previous projects</h3>
+    <section class="work" id="work">
+        <div class="wrapper">
+            <h2>My work</h2>
+            <h3>Previous projects</h3>
+            <div class="container-work">
                 <div class="container-img">
-                    <img alt="hamster-wars" class="hamster-wars" src="@/assets/pre_proj_hamster-wars.png">
+                    <img alt="hamster-wars" class="work-img" src="@/assets/pre_proj_hamster-wars.png">
+                </div>
+                <div class="work-desc">
+                    <h4>Hamster Wars</h4>
+                    <p>Made for a school excercize where we were to build a fullstack app with Node.js and Express.js as the backend. Firestore is used as database.
+                        Frontend was built with React and Typescript. For API calls I used Axios.
+                    </p>
+                    <div class="btn-link-holder">
+                        <button class="btn-link"><a href="https://hamsterwars-project-fullstack.herokuapp.com/">View site</a></button>
+                        <button class="btn-link"><a href="https://github.com/emiagren/hamsterwars-project">View code</a></button>
+                    </div>
                 </div>
             </div>
-            <div class="work-desc">
-                <h4>Hamster Wars</h4>
-                <p>Made for a school excercize where we were to build a fullstack app with Node.js and Express.js as the backend. Firestore is used as database.
-                    Frontend was built with React and Typescript. For API calls I used Axios.
-                </p>
-                <div class="btn-link-holder">
-                    <button class="btn-link"><a href="https://hamsterwars-project-fullstack.herokuapp.com/">View site</a></button>
-                    <button class="btn-link"><a href="https://github.com/emiagren/hamsterwars-project">View GitHub</a></button>
+            <div class="container-work">
+                <div class="container-img">
+                    <img alt="e-wallet" class="work-img" src="@/assets/pre_proj_ewallet.png">
+                </div>
+                <div class="work-desc">
+                    <h4>E-Wallet</h4>
+                    <p>Made for a school excercize where we were to build a fullstack app with Node.js and Express.js as the backend. Firestore is used as database.
+                        Frontend was built with React and Typescript. For API calls I used Axios.
+                    </p>
+                    <div class="btn-link-holder">
+                        <button class="btn-link"><a href="https://github.com/emiagren/iths-e-wallet">View code</a></button>
+                    </div>
+                </div>
+            </div>
+            <div class="container-work">
+                <div class="container-img">
+                    <img alt="beer-project" class="work-img" src="@/assets/pre_proj_beer_project.png">
+                </div>
+                <div class="work-desc">
+                    <h4>Beer Project</h4>
+                    <p>Made for a school excercize where we were to build a fullstack app with Node.js and Express.js as the backend. Firestore is used as database.
+                        Frontend was built with React and Typescript. For API calls I used Axios.
+                    </p>
+                    <div class="btn-link-holder">
+                        <button class="btn-link"><a href="https://github.com/HarshadaMulye/beer-project">View code</a></button>
+                    </div>
+                </div>
+            </div>
+            <div class="container-work">
+                <div class="container-img">
+                    <img alt="sinus-webshop" class="work-img" src="@/assets/pre_proj_sinus.png">
+                </div>
+                <div class="work-desc">
+                    <h4>Sinus Webshop</h4>
+                    <p>Made for a school excercize where we were to build a fullstack app with Node.js and Express.js as the backend. Firestore is used as database.
+                        Frontend was built with React and Typescript. For API calls I used Axios.
+                    </p>
+                    <div class="btn-link-holder">
+                        <button class="btn-link"><a href="https://github.com/annashokhireva/sinus-webshop">View code</a></button>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="bottom-angle"></div>
     </section>
+    <div class="bottom-angle"></div>
 </template>
 
 <script>
@@ -32,29 +74,13 @@ export default {
 
 <style scoped>
 
+.work {
+    background-color: #aca3be;
+    padding: 3rem 1.5rem 3rem;
+}
+
 .container-work {
-  background-color: #FD7C53;
-  padding: 48px 24px 48px;
-}
-
-.container-work h2 {
-    margin-top: 64px;
-}
-
-.container-work h3 {
-    margin-bottom: 48px;
-}
-
-.container-work::before {
-    content: url(./../assets/Lingonberries.svg);
-    display: block;
-    z-index: 1;
-    height: auto;
-    width: 175px;
-    position: absolute;
-    margin-top: -124px;
-    left: 8px;
-    transform: rotate(0.80turn);
+    margin-bottom: 4rem;
 }
 
 img {
@@ -63,45 +89,34 @@ img {
     min-width: 100%
 }
 
-.btn-link-holder {
-    display: flex;
-    justify-content: center;
-}
-
-.btn-link {
-    margin: 0.6rem;
-}
-
-.btn-link a {
-    color: #fff;
-    text-decoration: none;
-}
-
 .bottom-angle {
-    background-color: #FD7C53;
-    height: 80px;
+    background-color: #aca3be;
+    height: 36px;
     width: 100%;
-    clip-path: polygon(0 0, 100% 0, 100% 77%, 70% 0, 48% 59%, 26% 16%, 0 76%);
+    clip-path: polygon(29% 100%, 100% 38%, 100% 0, 0 0, 0% 38%);
     position: absolute;
 }
 
-@media screen and (min-width: 600px){
+@media screen and (min-width: 768px) {
 
-.container-work {
-    display: grid;
-    grid-template-columns: 50% 50%;
-}
+    .container-img {
+        width: 55%;
+    }
 
-.work-img-heading {
-    display: flex;
-    flex-direction: column;
-    padding: 2rem 4rem;
-}
+    .work-desc {
+        width: 45%;
+        margin: 0 3rem; 
+    }
 
-.work-desc {
-    display: flex;
-    flex-direction: column;
-    padding: 5rem 4rem;
-}
+    .container-work {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .container-work:nth-child(odd) .work-desc {
+        order: -1;
+    }
 }
 </style>

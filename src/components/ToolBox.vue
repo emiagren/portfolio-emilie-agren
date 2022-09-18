@@ -1,6 +1,6 @@
 <template>
-    <section class="toolbox">
-        <div class="container-toolbox">
+    <section class="toolbox" id="toolbox">
+        <div class="wrapper">
             <h2>Tools & tech</h2>
             <h3>My toolbox</h3>
             <p>These are the tools and technologies I have skills in and would use to bring my projects to life.</p>
@@ -47,8 +47,8 @@
                 </div>
             </div>
         </div>
-        <div class="bottom-angle"></div>
     </section>
+    <div class="bottom-angle"></div>
 </template>
 
 <script>
@@ -59,39 +59,17 @@ export default {
 </script>
 
 <style scoped>
-.container-toolbox {
-  background-color: #102A42;
+
+.toolbox {
+  background-color: #F1EAFF;
   padding: 48px 24px 48px;
-  color: #699BF7;
 }
-
-.container-toolbox h3 {
-  margin-top: 25px;
-  color: #fff;
-  font-weight: lighter;
-}
-
-.container-toolbox p {
-    margin-top: 1rem;
-}
-
-.container-toolbox::before {
-    content: url(./../assets/Blueberries.svg);
-    display: block;
-    z-index: 1;
-    height: auto;
-    width: 175px;
-    position: absolute;
-    margin-top: -124px;
-    right: 8px;
-}
-
 
 .bottom-angle {
-    background-color: #102A42;
-    height: 55px;
+    background-color: #F1EAFF;
+    height: 36px;
     width: 100%;
-    clip-path: polygon(29% 100%, 100% 38%, 100% 0, 0 0, 0% 38%);
+    clip-path: polygon(69% 100%, 100% 38%, 100% 0, 0 0, 0% 38%);
     position: absolute;
 }
 
@@ -107,15 +85,11 @@ export default {
     padding: 0 0.8rem;
     margin: 1.6rem 1rem 0.6rem;
     text-align: center;
+    color: #3FA48C;
 }
 
 .icon p{
     font-size: 1rem;
 }
 
-@media screen and (min-width: 600px) {
-    .container-toolbox {
-        padding: 5rem;
-    }
-}
 </style>
