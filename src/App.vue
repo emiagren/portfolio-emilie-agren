@@ -16,8 +16,7 @@ export default {
 
 <style>
 
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&family=Poppins&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=La+Belle+Aurore&family=Poppins&display=swap');
 * {
   margin: 0;
   box-sizing: border-box;
@@ -31,6 +30,7 @@ export default {
 
 h1, h2, p {
   font-family: 'Poppins', sans-serif;
+  color: #343434;
 }
 
 h3, h4 {
@@ -53,7 +53,7 @@ h3 {
 
 h4 {
   font-size: 1.4rem;
-  margin: 1rem 0;
+  margin: 2rem 0 1rem;
 }
 
 p {
@@ -79,6 +79,18 @@ a {
   text-decoration: none;
   font-size: 1.1rem;
   cursor: pointer;
+}
+
+.icon {
+    padding: 0 0.8rem;
+    text-align: center;
+}
+
+.icons-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 0 1.6rem;
 }
 
 </style>

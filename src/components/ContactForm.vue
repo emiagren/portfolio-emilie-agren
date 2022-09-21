@@ -5,12 +5,16 @@
             <h3>Get in touch</h3>
             <div class="container-contact">
                 <div class="container-form">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac lobortis ante, vel pellentesque metus. Maecenas eu aliquet felis.</p>
+                <p>
+                    At the moment I am looking for any new junior frontend positions, full time or part time. 
+                    Do you have an opening for a junior developer or a project where you think I would fit in? 
+                    I'd love to hear from you!
+                </p>
                 <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/mkneozao" method="post">
-                    <label for="full-name">Full Name<span class="required">*</span></label>
-                    <input type="text" name="name" id="full-name" placeholder="First and Last" required="">
+                    <label for="full-name">Name<span class="required">*</span></label>
+                    <input type="text" name="name" id="full-name" placeholder="Your name" required="">
                     <label for="email-address">Email Address<span class="required">*</span></label>
-                    <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="">
+                    <input type="email" name="_replyto" id="email-address" placeholder="email@example.com" required="">
                     <label for="message">Message<span class="required">*</span></label>
                     <textarea rows="5" name="message" id="message" placeholder="Hi Emilie, you seem nice. Let's collaborate!" required=""></textarea>
                     <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
@@ -18,7 +22,21 @@
                 </form>
                 </div>
                 <div class="container-social">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac lobortis ante, vel pellentesque metus. Maecenas eu aliquet felis.</p>
+                    <p>You can also find me on the following online spaces.</p>
+                    <div class="icons-wrapper">
+                        <div class="icon">
+                            <i class="devicon-linkedin-plain"></i>
+                        </div>
+                        <div class="icon">
+                            <i class="devicon-github-original"></i>
+                        </div>
+                        <div class="icon">
+                            <i class="devicon-facebook-plain"></i>
+                        </div>
+                        <div class="icon">
+                            <img src="@/assets/instagram.svg">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -34,7 +52,7 @@ export default {
 
 <style scoped>
 .contact {
-  background-color: #F1EAFF;
+  background-color: #dee1ee;
   padding: 3rem 1.5rem 3rem;
 }
 
@@ -49,17 +67,17 @@ form label, form input, form textarea {
     font-family: 'Poppins', sans-serif;
 }
 
-label {
+form label {
     font-family: 'Poppins', sans-serif;
 }
 
-input {
+form input {
     height: 48px;
     border-radius: 4px;
     border: none;
 }
 
-textarea {
+form textarea {
     height: 150px;
     border: none;
     border-radius: 4px;
@@ -68,6 +86,20 @@ textarea {
 
 .required {
     color: red;
+}
+
+.container-social {
+    margin-top: 1rem;
+}
+
+.icons-wrapper {
+    margin: 0 0 0.6rem;
+    margin-top: 2rem;
+}
+
+.icon {
+    font-size: 1.6rem;
+    color: #343434;
 }
 
 @media screen and (min-width: 768px){
@@ -85,6 +117,7 @@ textarea {
 
 .container-social {
     width: 30%;
+    margin-top: 0;
 }
 
 }

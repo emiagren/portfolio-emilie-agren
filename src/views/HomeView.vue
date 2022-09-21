@@ -1,6 +1,6 @@
 <template>
   <NavBar/>
-  <PortfolioTop/>
+  <PageHeader/>
   <AboutMe/>
   <ToolBox/>
   <MyWork/>
@@ -10,7 +10,7 @@
 
 <script>
 import NavBar from './../components/NavBar.vue';
-import PortfolioTop from './../components/PortfolioTop.vue';
+import PageHeader from './../components/PageHeader.vue';
 import AboutMe from './../components/AboutMe.vue';
 import ToolBox from './../components/ToolBox.vue';
 import MyWork from './../components/MyWork.vue';
@@ -21,7 +21,7 @@ export default {
   name: 'App',
   components: {
     NavBar,
-    PortfolioTop,
+    PageHeader,
     AboutMe,
     ToolBox,
     MyWork,

@@ -9,8 +9,14 @@
                 </div>
                 <div class="work-desc">
                     <h4>Hamster Wars</h4>
-                    <p>Made for a school excercize where we were to build a fullstack app with Node.js and Express.js as the backend. Firestore is used as database.
-                        Frontend was built with React and Typescript. For API calls I used Axios.
+                    <p>
+                        What do all hamsters have in common? They're ridiculously tiny and cute! But only one can
+                        be the cutest right? And that's how the Hamster Wars began... 
+                        <br>
+                        <br>
+                        Made as a school assignment where the purpose was to build a fullstack app. 
+                        Node.js and Express.js was used as backend with Firestore as the database.
+                        The frontend was built with React and Typescript. For API calls I used Axios.
                     </p>
                     <div class="btn-link-holder">
                         <button class="btn-link"><a href="https://hamsterwars-project-fullstack.herokuapp.com/">View site</a></button>
@@ -24,8 +30,13 @@
                 </div>
                 <div class="work-desc">
                     <h4>E-Wallet</h4>
-                    <p>Made for a school excercize where we were to build a fullstack app with Node.js and Express.js as the backend. Firestore is used as database.
-                        Frontend was built with React and Typescript. For API calls I used Axios.
+                    <p>
+                        This was my first school project working with a framework, in this case Vue. The assignment was to build, 
+                        as the name gives away, a simple e-wallet. The task was, in addition to design, to build a form to be able 
+                        to add new cards as well as the possibility to delete cards. 
+                        <br>
+                        <br>
+                        This project was never deployed but the code is available to view at GitHub. 
                     </p>
                     <div class="btn-link-holder">
                         <button class="btn-link"><a href="https://github.com/emiagren/iths-e-wallet">View code</a></button>
@@ -38,8 +49,13 @@
                 </div>
                 <div class="work-desc">
                     <h4>Beer Project</h4>
-                    <p>Made for a school excercize where we were to build a fullstack app with Node.js and Express.js as the backend. Firestore is used as database.
-                        Frontend was built with React and Typescript. For API calls I used Axios.
+                    <p>
+                        A Brewdog beer wiki made together with two class mates back in my first term of school. 
+                        Built with Html, CSS and Javascript - this was our first go at making a simple website
+                        with Javascript and making API calls. 
+                        <br>
+                        <br>
+                        This project was never deployed but the code is available to view at GitHub. 
                     </p>
                     <div class="btn-link-holder">
                         <button class="btn-link"><a href="https://github.com/HarshadaMulye/beer-project">View code</a></button>
@@ -52,8 +68,14 @@
                 </div>
                 <div class="work-desc">
                     <h4>Sinus Webshop</h4>
-                    <p>Made for a school excercize where we were to build a fullstack app with Node.js and Express.js as the backend. Firestore is used as database.
-                        Frontend was built with React and Typescript. For API calls I used Axios.
+                    <p>
+                        A webshop made as a school assignment by me and two class mates. This project was
+                        a lot about working agile and for that we used the SCRUM-method. The frontend was built
+                        with Vue and the backend was pre coded by our teacher. The goal was for the user to be able
+                        to register, login, order and view past orders. For state management we used Vuex.
+                        <br>
+                        <br>
+                        This project was never deployed but the code is available to view at GitHub.  
                     </p>
                     <div class="btn-link-holder">
                         <button class="btn-link"><a href="https://github.com/annashokhireva/sinus-webshop">View code</a></button>
@@ -75,8 +97,16 @@ export default {
 <style scoped>
 
 .work {
-    background-color: #aca3be;
+    background-color: #a7a8c2;
     padding: 3rem 1.5rem 3rem;
+}
+
+.bottom-angle {
+    background-color: #a7a8c2;
+    height: 36px;
+    width: 100%;
+    clip-path: polygon(29% 100%, 100% 38%, 100% 0, 0 0, 0% 38%);
+    position: absolute;
 }
 
 .container-work {
@@ -89,17 +119,10 @@ img {
     min-width: 100%
 }
 
-.bottom-angle {
-    background-color: #aca3be;
-    height: 36px;
-    width: 100%;
-    clip-path: polygon(29% 100%, 100% 38%, 100% 0, 0 0, 0% 38%);
-    position: absolute;
-}
-
 @media screen and (min-width: 768px) {
 
     .container-img {
+        margin-top: 2rem;
         width: 55%;
     }
 

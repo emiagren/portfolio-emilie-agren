@@ -3,7 +3,7 @@
         <div class="nav-content">
             <div class="avatar">
                 <img src="../assets/profile_img_emilie.jpg" alt="avatar">
-                <span>emilie ågren</span>
+                <!-- <span>emilie ågren</span> -->
             </div>
             <div class="hamburger" @click="showMenu">
                 <span class="bar1"></span>
@@ -16,7 +16,7 @@
                 <li><a :href="href" @click.prevent="scrollTo('#home')">Home</a></li>
                 <li><a :href="href" @click.prevent="scrollTo('#about')">About me</a></li>
                 <li><a :href="href" @click.prevent="scrollTo('#toolbox')">Skills and tools</a></li>
-                <li><a :href="href" @click.prevent="scrollTo('#work')">My work</a></li>
+                <li><a :href="href" @click.prevent="scrollTo('#work')">Projects</a></li>
                 <li><a :href="href" @click.prevent="scrollTo('#contact')">Contact</a></li>
             </ul>
         </div>

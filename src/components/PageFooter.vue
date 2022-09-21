@@ -1,6 +1,6 @@
 <template>
   <footer>
-    <p>2022 Emilie Ågren</p>
+    <p>ⓒ 2022 - Emilie Ågren</p>
   </footer>
 </template>
 
@@ -15,7 +15,7 @@ export default {
 
 footer {
     background-color: rgb(59, 59, 59);
-    height: 48px;
+    color: rgb(118, 118, 118);
     text-align: center;
     padding: 2rem;
 }
