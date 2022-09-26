@@ -13,7 +13,7 @@
                 For as long as I can remember I have had an eye for the visual in an artistic kind of way. As a kid one 
                 of my biggest passions were drawing. As a teenager I discovered photo editing and web design. In my 
                 twenties I took classes in web design and photography, which were favorite subjects at that point. 
-                Through my previous full time job I had spiked an interest for IT when doing minor IT works in the coms 
+                Through my previous full time job I spiked an interest for IT when doing minor IT works in the coms 
                 room and in our offices.
                 <br>
                 <br>
